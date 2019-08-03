@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Train Scheduler</title>
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+    </head>
+    <body>
+        <h1 id="title">
+            Train Scheduler
+        </h1>
+        <h2><center>Current Train Scheduler</center></h2>
+        <hr>
+        <table id="table">
+            <tr id="first">
+                <td>Train Name</td>
+                <td>Destination</td>
+                <td>Frequency (min)</td>
+                <td>Next Arrival</td>
+                <td>Minutes Away</td>
+            </tr>
+        </table>
+        <h2><center>Add Train</center></h2>
+        <form id="form">
+            <h3>Train Name</h3>
+            <input type="text" name="name" id="name" required>
+            <h3>Destination</h3>
+            <input type="text" name="destination" id="dest" required>
+            <h3>First Train Time (HH:mm - military time)</h3>
+            <input type="time" name="firsttime" id="firsttime" required>
+            <h3>Frequency (min)</h3>
+            <input type="number" name="frequency" id="frequency" required>
+            <br>
+            <br>
+            <button id="submit">Submit</button>
+        </form>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type='text/javascript' src='apikeys.js'></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+    <script src="assets/javascript/javascript.js"></script>
+</html>
